@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>O_ Etch a Sketch _O</title>
+</head>
+<body>
+    <h1><a href="index.html">Etch a Sketch</a></h1>
+    <!-- i used canvas api - https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API -->
+    <canvas id="canvas" width='800' height="800"></canvas>
+
+    <!-- toolbox -->
+    <div class="toolbox">
+        <!-- size and color -->
+        <button id="decrease">-</button>
+        <span id="size">5</span>
+        <button id="increase">+</button>
+        <input type="color" id="color">
+        <!-- arrow buttons -->
+        <button class="arrow-btn" id="moveup" style="margin-left:20px;"><i class="fas fa-angle-up"></i>D</button>
+        <button class="arrow-btn" id="movedown"><i class="fas fa-angle-down"></i></i><span>F</span></button>
+        <button class="arrow-btn" id="moveleft" style="margin-left:20px;"><i class="fas fa-angle-left"></i>J</button>
+        <button class="arrow-btn" id="moveright"><i class="fas fa-angle-right"></i>K</button>
+        <!-- clear btn -->
+        <button id="clear"><i class="fas fa-trash"></i></button>
+    </div>
+
+    <!-- JS link -->
+    <script src="script.js"></script>
+</body>
+</html>
